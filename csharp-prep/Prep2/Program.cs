@@ -6,37 +6,46 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("What is your grade?: ");
-        String grade_string = Console.ReadLine();
-        int grade = int.Parse(grade_string);
+        String letter = Console.ReadLine();
+        int grade = int.Parse(letter);
 
 
         if (grade >= 90)
         {
-            grade_string = "A";
+            letter = "A";
 
         }
 
         else if (grade >= 80)
         {
-            grade_string = "B";
+            letter = "B";
 
         }
         else if (grade >= 70)
         {
-            grade_string = "C";
+            letter = "C";
 
         }
         else if (grade >= 60)
         {
-            grade_string = "D";
+            letter = "D";
 
         }
         else
         {
-            grade_string = "F";
+            letter = "F";
         }
 
-        Console.WriteLine($"Your grade is {grade_string}");
+        Console.WriteLine($"Your grade is {letter}");
+
+        if (grade >= 70)
+        {
+            Console.WriteLine("You passed!");
+        }
+        else
+        {
+            Console.WriteLine("Better luck next time.");
+        }
         
 
 
