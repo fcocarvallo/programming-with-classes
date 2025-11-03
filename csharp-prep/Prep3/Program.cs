@@ -5,27 +5,27 @@ class Program
     static void Main(string[] args)
     {
         Random random = new Random();
-        int number = random.Next(10);
+        int number = random.Next(100);
         int guess = 0;
         while (number != guess)
         {
-            Console.Write("What is your guess?: ");
+            Console.WriteLine("What is your guess?: ");
             String number_string = Console.ReadLine();
             guess = int.Parse(number_string);
             if (number != guess)
             {
-                Console.Write("Sorry, incorrect number. Try again!\n");
+                Console.Write("Incorrect number. ");
                 if (guess > number)
                 {
-                    Console.Write("Try with a lower number\n");
+                    Console.WriteLine("Try a lower one.");
                 }
                 else
                 {
-                    Console.Write("Try with a higher number\n");
+                    Console.WriteLine("Try a higher one.");
                 }
             }
         }
-        Console.Write("Congratulations!, You guessed the number");
+        Console.WriteLine($"Yes! the number is {guess}! Well Done!");
     }
 
 }
