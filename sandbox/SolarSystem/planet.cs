@@ -5,6 +5,7 @@ class Planet
 
     public void DisplayPlanetInformation()
     {
-        Console.WriteLine($"The planet name: {_name}, diameter: {_diameter}");
-    }
+        Console.WriteLine($"The planet name: {_name}, diameter: {_diameter}")
+
+    public List<Planet>
 }
