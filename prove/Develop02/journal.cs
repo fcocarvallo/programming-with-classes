@@ -1,19 +1,12 @@
 using System.IO;
-using System.IO.Enumeration;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.VisualBasic;
 
 class Journal
 {
-
     public List<string> _entries = new List<string>();
-
 
     public void AddEntry(string entry)
     {
-
         _entries.Add(entry);
-
     }
 
 
@@ -29,9 +22,8 @@ class Journal
             Console.WriteLine($"{date}\n{prompt}\n{answer}\n");
         }
 
-
-
     }
+
 
     public void SaveToFile()
     {
@@ -51,10 +43,10 @@ class Journal
 
 
         }
-
         Console.WriteLine("File saved successfully!\n");
 
     }
+
 
     public void LoadFromFile()
     {
@@ -69,20 +61,13 @@ class Journal
 
         foreach (string line in lines)
         {
-
             _entries.Add(line);
-
-
         }
 
         Console.WriteLine("File loaded successfully!\n");
 
-
-
-
     }
     
-
         public void ClearJournal()
     {
         _entries.Clear();

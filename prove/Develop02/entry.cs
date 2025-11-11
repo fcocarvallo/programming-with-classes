@@ -1,7 +1,6 @@
 using System;
 class Entry
 {
-
     public DateTime _date;
     public string[] _menu = {
 
@@ -12,7 +11,6 @@ class Entry
         "5. Get inspired",
         "6. Quit"
     };
-
 
     public string[] _promptList =
 {
@@ -37,9 +35,7 @@ class Entry
 
         foreach (string item in _menu)
         {
-
             Console.WriteLine(item);
-
         }
 
     }
@@ -51,12 +47,9 @@ class Entry
 
         do
         {
-
             Console.WriteLine("Please, select an option from the menu above:");
             string userInput = Console.ReadLine()!;
             selection = int.Parse(userInput);
-
-
 
         } while ((selection < 1) || (selection > 6));
 
@@ -79,12 +72,12 @@ class Entry
 
     public string ComposeEntry()
     {
-
         string[] prompOutput = SelectPrompt();
         string prompt = prompOutput[0];
         string userText = prompOutput[1];
         _date = DateTime.Now;
         string dateText = _date.ToShortDateString();
+
         return $"Date: {dateText}~Prompt: {prompt}~Entry: {userText}";
     }
     
