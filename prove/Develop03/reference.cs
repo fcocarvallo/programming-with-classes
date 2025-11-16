@@ -40,7 +40,6 @@ class Reference
     {
         Console.WriteLine(ComposeReference());
     }
-
    
 
 }

@@ -36,7 +36,6 @@ private string[] _selectedScripture;
         return parts;
     } 
 
-
     public void SetScripture()
     {
         _selectedScripture = GetParts();
@@ -90,7 +89,6 @@ private string[] _selectedScripture;
         }
 
         return parameters.ToArray();
-
 
     }
 
