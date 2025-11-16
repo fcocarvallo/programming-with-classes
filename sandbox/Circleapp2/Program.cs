@@ -8,5 +8,7 @@ class Program
         Circle myCircle = new Circle();
         myCircle.SetRadius(10.0);
         Console.WriteLine(myCircle.GetCircleArea());
+
+        Circle myCircle2 = new Circle(10);;
     }
 }   

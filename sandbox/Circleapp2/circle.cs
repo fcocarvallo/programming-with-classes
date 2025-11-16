@@ -30,8 +30,20 @@ class Circle
 
     public double GetCircleArea()
     {
-        return 3.1415 * _radius * _radius;
+        return Math.PI * _radius * _radius;
     }
+
+    public double GetCircunference()
+    {
+        return 2 * Math.PI * _radius;
+    }
+
+    public double GetDiameter()
+    {
+        return 2 * _radius;
+    }
+
+    
 
 
 }
