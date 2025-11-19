@@ -1,6 +1,7 @@
 using System;
 class Scripture
 {
+    private string _reference;
     private string _scripture;
     private List<Word> _wordsList;
 

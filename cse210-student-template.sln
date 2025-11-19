@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem", "sandbox\Sola
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circleapp2", "sandbox\Circleapp2\Circleapp2.csproj", "{1458999D-4E4B-414A-A436-591DB2FE7C4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonProject", "sandbox\PersonProject\PersonProject.csproj", "{1EDD7510-B040-4908-B0AB-AC5AFE13F34B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,10 @@ Global
 		{1458999D-4E4B-414A-A436-591DB2FE7C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1458999D-4E4B-414A-A436-591DB2FE7C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1458999D-4E4B-414A-A436-591DB2FE7C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EDD7510-B040-4908-B0AB-AC5AFE13F34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDD7510-B040-4908-B0AB-AC5AFE13F34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDD7510-B040-4908-B0AB-AC5AFE13F34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDD7510-B040-4908-B0AB-AC5AFE13F34B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +177,7 @@ Global
 		{80DC8317-35BE-4231-A364-4C264F67218C} = {9BD1CAC1-4326-4D59-9857-A733451B87EB}
 		{ACB46882-E8AD-487B-B2C4-C882BCC4525F} = {9BD1CAC1-4326-4D59-9857-A733451B87EB}
 		{1458999D-4E4B-414A-A436-591DB2FE7C4E} = {9BD1CAC1-4326-4D59-9857-A733451B87EB}
+		{1EDD7510-B040-4908-B0AB-AC5AFE13F34B} = {9BD1CAC1-4326-4D59-9857-A733451B87EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19AF66DC-EAD7-4425-8965-A7DBC84E77B9}
