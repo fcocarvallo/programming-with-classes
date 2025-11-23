@@ -59,7 +59,7 @@ string[] gratitudeListPrompts = {
 
             Console.WriteLine($"{lisCount} things you feel appreciation for. That's awesome!");
             Thread.Sleep(2500);
-            Console.Clear();
+            
 
 
         } while (DateTime.Now < endTime);
