@@ -41,7 +41,7 @@ public class Activity
         _endTime = DateTime.Now;
     }
 
-    public void SetDuration()
+    private void SetDuration()
     {
         Console.WriteLine("How long, in seconds, would you like for your session?");
         string duration = Console.ReadLine();
@@ -61,7 +61,7 @@ public class Activity
         return _endTime;
     }
 
-    public void DisplayGreeting()
+    private void DisplayGreeting()
     {
         Console.WriteLine($"Welcome to the {_name} Activity.\n");
         Console.WriteLine($"{_description}\n");
@@ -75,7 +75,7 @@ public class Activity
 
     }
 
-    public void DisplayAnimation()
+    private void DisplayAnimation()
     {
 
     DateTime endTime = DateTime.Now.AddSeconds(5);

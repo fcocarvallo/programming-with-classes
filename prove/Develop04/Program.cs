@@ -19,14 +19,14 @@ class Program
             {
                 Breathing breath = new Breathing();
 
-                breath.DisplayGreeting();
+           
                 breath.BreathInOut();
             }
             else if (userInput == 2)
             {
                 Reflecting reflect = new Reflecting();
 
-                reflect.DisplayGreeting();
+        
                 reflect.ReflectingSession();
             }
             else if (userInput == 3)
