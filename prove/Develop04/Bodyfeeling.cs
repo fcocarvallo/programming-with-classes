@@ -21,8 +21,7 @@ public void BodyFeelingRoutine()
         CountDown(5);
         Console.Write("\nNow, prepare... ");
         CountDown(5);
-        Console.Clear();
-        CountDown(5);
+        Console.WriteLine();
         Console.WriteLine();
         Console.Write("Feel your arms and hands... ");
         CountDown(8);
