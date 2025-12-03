@@ -4,18 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-
-        
-        Menu myMenu = new Menu();
-        int userInput = myMenu.DisplayMenu();
-
         Goals myGoal = new Goals();
         GoalManager myGoalList = new GoalManager();
+        
+        Menu myMenu = new Menu();
+        myGoalList.DisplayTotal();
+        int userInput = myMenu.DisplayMenu();
+
+        
 
         do
         {
             
-
         if(userInput == 1)
         {
             int goalType = myGoal.GetGoalType();
@@ -36,16 +36,35 @@ class Program
 
             myGoal.SetGoal();
             myGoalList.AddGoal(myGoal);
+            Console.WriteLine();
 
         }
 
         else if(userInput == 2)
             {
                 myGoalList.DisplayGoals();
+                Console.WriteLine();
             }
 
+        else if(userInput == 3)
+            {
+                myGoalList.SaveToFile();
+                Console.WriteLine();
+            }
 
+        else if(userInput == 4)
+            {
+                myGoalList.LoadFromFile();
+                Console.WriteLine();
+            }
 
+        else if(userInput == 5)
+            {
+                myGoalList.UpdateGoal();
+                Console.WriteLine();
+            }
+
+        myGoalList.DisplayTotal();
         userInput = myMenu.DisplayMenu();
 
         } while(userInput != 6);

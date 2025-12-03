@@ -25,6 +25,7 @@ class Menu
             try
             {
                 response = int.Parse(Console.ReadLine()!);
+                Console.WriteLine();
             }
             catch 
             {
