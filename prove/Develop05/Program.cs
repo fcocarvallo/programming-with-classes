@@ -64,6 +64,9 @@ class Program
                 Console.WriteLine();
             }
 
+        int goalsCount = myGoalList.GoalsCount();
+        Console.WriteLine($"\nYou have registered {goalsCount} goal(s) so far.");
+        Console.WriteLine();
         myGoalList.DisplayTotal();
         userInput = myMenu.DisplayMenu();
 

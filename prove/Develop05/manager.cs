@@ -129,6 +129,16 @@ public class GoalManager
     {
         Console.WriteLine($"Your have {_globalSum} points.\n");
     }
+
+    public int GoalsCount()
+    {
+        int goalsCount = 0;
+        foreach (Goals goal in _myGoalList)
+        {
+            goalsCount ++;
+        }
+        return goalsCount;
+    }
     
         
     
