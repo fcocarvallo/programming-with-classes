@@ -13,7 +13,6 @@ public class GoalManager
     public void AddGoal(Goals myGoal)
     {
         _myGoalList.Add(myGoal);
-        Console.WriteLine("Goal created successfully!");
     }
 
     public void DisplayGoals()
