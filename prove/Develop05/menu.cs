@@ -32,7 +32,6 @@ class Menu
                 Console.WriteLine("Input must be an integer value between 1 and 6.");
             }
         }
-
         return response;
     }
 }

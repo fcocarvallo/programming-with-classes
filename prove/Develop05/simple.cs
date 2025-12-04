@@ -32,7 +32,6 @@ public class Simple: Goals
 
         Console.WriteLine($"Awesome! You have scored {goalParts[2]}");
         SetDone();
-
     }
 
         public override string SaveGoal()
@@ -40,11 +39,6 @@ public class Simple: Goals
         string goal = GetGoal();
         return $"{goal}~{IsDone()}";
     }
-
-
-
-
-
 }
 
 

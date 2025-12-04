@@ -14,8 +14,4 @@ public class Eternal: Goals
         SetPoints(goalParts[2]);
         Console.WriteLine($"Awesome! You have scored {goalParts[2]}");
     }
-    
-    
-
-
 }

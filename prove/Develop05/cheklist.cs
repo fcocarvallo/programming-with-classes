@@ -59,7 +59,6 @@ public class CheckList: Goals
         string goal = GetGoal();
         goal = goal.Substring(0, goal.Length - 1);
         return $"{goal}{GetTimesDone()}";
-
     }
 
 

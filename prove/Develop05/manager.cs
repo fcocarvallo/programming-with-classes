@@ -41,14 +41,11 @@ public class GoalManager
         string[] parts = goal.GoalParts(goal.GetGoal());
         goal.updGoal(parts);
         SetTotal();
-        Console.WriteLine();
-    
-       
+        Console.WriteLine();   
     }
 
     public void SetTotal()
     {
-    
         
         foreach(Goals goal in _myGoalList)
         {
@@ -56,8 +53,7 @@ public class GoalManager
             int points = goal.TotalPoints();
             _globalSum = _globalSum + points;
            
-        }
-        
+        } 
     }
 
     public void SaveToFile()
@@ -70,7 +66,6 @@ public class GoalManager
 
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
-
             outputFile.WriteLine(_globalSum);
             foreach (Goals goal in _myGoalList)
             {
@@ -79,7 +74,6 @@ public class GoalManager
 
         }
         Console.WriteLine("\nFile saved successfully! ");
-
     }
 
     public void LoadFromFile()
@@ -123,8 +117,6 @@ public class GoalManager
             {
                 _globalSum = int.Parse(parts[0]);
             }
-            
-            
         }
         SetTotal(); 
         Console.WriteLine("\nFile loaded successfully!");
@@ -145,13 +137,10 @@ public class GoalManager
             completedGoals ++;
             }
             goalsCount ++;
-        }
-        
+        }  
         return $"Your have registered {goalsCount} goals - completed: {completedGoals}.";
     }
-    
-        
-    
+       
 }
 
 

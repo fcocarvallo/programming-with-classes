@@ -5,7 +5,6 @@ public class Goals{
     private string _goal;
     private int _points = 0;
     private int _timesDone = 0;
-
     private bool _done = false;
 
     public Goals()
@@ -27,7 +26,6 @@ public class Goals{
         Console.WriteLine();
         int userSelection = int.Parse(selection);
         return userSelection;
-
     }
 
     public string GetTimesDone()
@@ -61,7 +59,6 @@ public class Goals{
     {
         string goal = ComposeGoal();
         _goal = goal;
-
     }
 
     
@@ -69,7 +66,6 @@ public class Goals{
     {
         string[] goalParts = goal.Split("~");
         return goalParts;
-
     }
 
     public virtual void showGoal()
@@ -102,9 +98,7 @@ public class Goals{
     {
         _points = 0;
         int intNumber = int.Parse(stringNumber);
-        // _points = _points + intNumber;
         _points = intNumber;
-
     }
 
     public virtual void updGoal(string[] goalParts)
@@ -122,6 +116,4 @@ public class Goals{
         string goal = GetGoal();
         return goal;
     }
-
-
 }

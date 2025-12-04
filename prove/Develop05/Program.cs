@@ -6,16 +6,14 @@ class Program
     {
         Goals myGoal = new Goals();
         GoalManager myGoalList = new GoalManager();
-        
         Menu myMenu = new Menu();
+
         myGoalList.DisplayTotal();
         int userInput = myMenu.DisplayMenu();
 
-        
-
         do
         {
-            
+
         if(userInput == 1)
         {
             int goalType = myGoal.GetGoalType();
@@ -23,7 +21,6 @@ class Program
             if (goalType == 3)
             {
                 myGoal = new CheckList();
-
             }
             else if (goalType == 2)
             {
@@ -37,7 +34,6 @@ class Program
             myGoal.SetGoal();
             myGoalList.AddGoal(myGoal);
             Console.WriteLine();
-
         }
 
         else if(userInput == 2)
@@ -70,12 +66,5 @@ class Program
         userInput = myMenu.DisplayMenu();
 
         } while(userInput != 6);
-
-
-
-
-
-
-        
     }
 }
