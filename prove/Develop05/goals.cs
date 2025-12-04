@@ -110,12 +110,6 @@ public class Goals{
     public virtual void updGoal(string[] goalParts)
     {
     }
-
-    private void ShowPoints()
-    {
-        Console.WriteLine(_points);
-    }
-
     public int TotalPoints()
     {
         int retValue = _points;

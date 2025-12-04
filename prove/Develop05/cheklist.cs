@@ -1,6 +1,5 @@
 public class CheckList: Goals
 {
-    private bool _done = false;
 
     public CheckList() : base()
     {
@@ -17,7 +16,7 @@ public class CheckList: Goals
         string baseString = GetBaseString();
         Console.Write("How many times must complete the goal for a bonus?: ");
         string times = Console.ReadLine();
-        Console.Write("points scored by getting the bonus?");
+        Console.Write("points scored by getting the bonus?: ");
         string bonus = Console.ReadLine();
         return $"{baseString}~{bonus}~{times}~0";
     }
@@ -39,7 +38,7 @@ public class CheckList: Goals
     public override void updGoal(string[] goalParts)
     {
         SetPoints(goalParts[2]);
-        Console.WriteLine($"Awesome! You have scored {goalParts[2]} points");
+        Console.WriteLine($"\nAwesome! You have scored {goalParts[2]} points");
 
         addDone();
         goalParts[5] = TimesDone().ToString();

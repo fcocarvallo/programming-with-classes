@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 public class GoalManager
 {
     private int _globalSum = 0;
@@ -11,10 +13,12 @@ public class GoalManager
     public void AddGoal(Goals myGoal)
     {
         _myGoalList.Add(myGoal);
+        Console.WriteLine("Goal created successfully!");
     }
 
     public void DisplayGoals()
     {
+        Console.WriteLine("Here is your listo of goals: ");
         List<Goals> goals = GetMyList();
         int n = 1;
         foreach (Goals goal in goals)
@@ -23,7 +27,7 @@ public class GoalManager
             goal.showGoal(); 
             n ++;
         }
-        Console.WriteLine();
+
     }
 
     public void UpdateGoal()
@@ -37,6 +41,7 @@ public class GoalManager
         string[] parts = goal.GoalParts(goal.GetGoal());
         goal.updGoal(parts);
         SetTotal();
+        Console.WriteLine();
     
        
     }
@@ -73,7 +78,7 @@ public class GoalManager
             }
 
         }
-        Console.WriteLine("\nFile saved successfully!");
+        Console.WriteLine("\nFile saved successfully! ");
 
     }
 
@@ -127,17 +132,22 @@ public class GoalManager
 
     public void DisplayTotal()
     {
-        Console.WriteLine($"Your have {_globalSum} points.\n");
+        Console.WriteLine($"Accumulated points: {_globalSum}\n");
     }
 
-    public int GoalsCount()
+    public string GoalsCount()
     {
         int goalsCount = 0;
+        int completedGoals = 0;
         foreach (Goals goal in _myGoalList)
         {
+            if (goal.IsDone()){
+            completedGoals ++;
+            }
             goalsCount ++;
         }
-        return goalsCount;
+        
+        return $"Your have registered {goalsCount} goals - completed: {completedGoals}.";
     }
     
         
