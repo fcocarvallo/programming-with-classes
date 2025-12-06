@@ -9,14 +9,14 @@ public class Video
 
     public List<Comment> _myComments = new List<Comment>();
 
-    public string CommentsNumber(List<Comment> myComments)
+    public int CommentsNumber()
     {
         int i = 0;
-        foreach(Comment comment in myComments)
+        foreach(Comment comment in _myComments)
         {
             i++;
         }
-        return i.ToString();
+        return i;
     }
 
     public void SongInfo()
@@ -28,7 +28,7 @@ public class Video
 
     public void DisplayComments()
     {
-        Console.WriteLine($"Comments({CommentsNumber(_myComments)})\n");
+        Console.WriteLine($"Comments({CommentsNumber()})\n");
         foreach(Comment comment in _myComments)
         {
             comment.commentInfo();
