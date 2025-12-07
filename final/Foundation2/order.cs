@@ -40,32 +40,47 @@ public class Order
 
     public void ShippingLabel()
     {
-        Console.WriteLine($"Name: {GetCustomerName()}\nAddress: {GetCustomerAddress()}");
+        Console.WriteLine("------ SHIPPING LABEL ------\n");
+
+        Console.WriteLine("Recipient:");
+        Console.WriteLine($"  {GetCustomerName()}");
+        Console.WriteLine();
+
+        Console.WriteLine("Address:");
+        Console.WriteLine($"  {GetCustomerAddress()}");
+
+        Console.WriteLine("\n----------------------------");
     }
+
 
     public void PackingLabel()
     {
-        foreach(Product product in _productList)
+        Console.WriteLine("------ PACKING LABEL ------\n");
+
+        foreach (Product product in _productList)
         {
-            Console.WriteLine($"{product.GetName()}\nSKU: {product.GetId()}");
-            Console.WriteLine();
+            Console.WriteLine($"Product: {product.GetName()}");
+            Console.WriteLine($"SKU:     {product.GetId()}");
+            Console.WriteLine($"Qty:     {product.GetQuantity()}");
+            Console.WriteLine("------------------------------");
         }
+
+        Console.WriteLine();
     }
+
 
     public void DisplayOrderInfo()
     {
-        Console.WriteLine("-------------------------------------------------");
-        Console.WriteLine("PACKING LABEL");
-        Console.WriteLine("-------------------------------------------------");
+        Console.WriteLine("\n========================================");
+        Console.WriteLine("               ORDER SUMMARY");
+        Console.WriteLine("========================================\n");
+
         PackingLabel();
-        Console.WriteLine("-------------------------------------------------");
-         Console.WriteLine("SHIPPING LABEL");
-        Console.WriteLine("-------------------------------------------------");
+
         ShippingLabel();
-        Console.WriteLine("-------------------------------------------------");
-        Console.WriteLine($"TOTAL PRICE: $ {CalculateTotal()} (Shipping included)");
-        Console.WriteLine("-------------------------------------------------");
-        Console.WriteLine();
-    
+
+        Console.WriteLine($"Order Total (incl. shipping):  ${CalculateTotal():0.00}");
+        Console.WriteLine("========================================\n");
     }
+
 }
