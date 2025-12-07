@@ -9,14 +9,14 @@ public class Order
         _productList = productList;
     }
 
-    public string GetCustomerName()
+    private string GetCustomerName()
     {
         return _customer.GetName();
     }
 
 
 
-    public string GetCustomerAddress()
+    private string GetCustomerAddress()
     {
         return _customer.GetAddress().ShowAddress();
     }
