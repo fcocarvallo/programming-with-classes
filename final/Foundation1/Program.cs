@@ -35,7 +35,7 @@ class Program
 
         // Welcome to the jungle - Guns N' Roses
         Video welcomeToJungle = new Video();
-        welcomeToJungle._title = "Welcome to the welcomeToJungle";
+        welcomeToJungle._title = "Welcome to the Jungle";
         welcomeToJungle._author = "Guns N' Roses";
         welcomeToJungle._length = 274;
             //Comment #1

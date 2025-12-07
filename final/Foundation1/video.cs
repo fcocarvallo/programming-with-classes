@@ -31,7 +31,7 @@ public class Video
         Console.WriteLine($"Comments({CommentsNumber()})\n");
         foreach(Comment comment in _myComments)
         {
-            comment.commentInfo();
+            comment.CommentInfo();
 
         }
     }
