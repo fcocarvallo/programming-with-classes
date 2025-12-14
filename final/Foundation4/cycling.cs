@@ -26,12 +26,5 @@ class Cycling : Activity
         return GetSpeed();
     }
 
-    // pace(minutes per mile/kilometer)
-    // public override double CalculatePace()
-    // {
-    //     return 60 / CalculateSpeed();
-    // }
-
-    // summary ex: 03 nov 2022 (30 min)- Distance 3.0 miles, Speed 6.0mph, Pace 10.0 min per mile
 
 }

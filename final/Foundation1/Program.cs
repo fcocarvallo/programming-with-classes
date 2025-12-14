@@ -10,7 +10,7 @@ class Program
 
         // Billie Jean - Michael Jackson
         Video billieJean = new Video();
-        billieJean._title = "Billy jean";
+        billieJean._title = "Billy Jean";
         billieJean._author = "Michael Jackson";
         billieJean._length = 294;
         billieJean._views = 4958774;
@@ -61,7 +61,7 @@ class Program
 
         // Back in Black - AC/DC
         Video backInBlack = new Video();
-        backInBlack._title = "Back in black";
+        backInBlack._title = "Back in Black";
         backInBlack._author = "AC/DC";
         backInBlack._length = 255;
         backInBlack._views = 2938475;
