@@ -2,7 +2,7 @@ class Running : Activity
 {
     private double _distance;
 
-    public Running(int length, DateOnly date, double distance): base(length, date)
+    public Running(int length, DateOnly date, TimeOnly time, double distance): base(length, date, time)
     {
         _distance = distance;
     }

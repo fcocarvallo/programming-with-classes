@@ -2,7 +2,7 @@ public class Outdoor: Event
 {
     private string _forecast;
 
-        public Outdoor(string title, string description, DateOnly date, TimeOnly time, Address address, string forecast): base(title, description, date, time, address)
+        public Outdoor(string title, string description, DateOnly date, TimeOnly time, Address address,TimeOnly admission, string forecast): base(title, description, date, time, address, admission)
     {
         _forecast = forecast;
     }

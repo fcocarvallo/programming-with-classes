@@ -81,6 +81,8 @@ public class Order
 
         Console.WriteLine($"Order Total (incl. shipping):  ${CalculateTotal():0.00}");
         Console.WriteLine("========================================\n");
+        Console.WriteLine($"Get 25% off in your next order with the code: {GetCustomerName()}-ILOVECHRISTMASS\n");
+        Console.WriteLine("========================================\n");
     }
 
 }

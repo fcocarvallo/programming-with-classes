@@ -2,7 +2,7 @@ public class Reception: Event
 {
     private string _rsvp;
 
-    public Reception(string title, string description, DateOnly date, TimeOnly time, Address address, string rsvp): base(title, description, date, time, address)
+    public Reception(string title, string description, DateOnly date, TimeOnly time, Address address, TimeOnly admission, string rsvp): base(title, description, date, time, address, admission)
     {
         _rsvp = rsvp;
     }

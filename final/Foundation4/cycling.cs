@@ -2,7 +2,7 @@ class Cycling : Activity
 {
     private double _speed;
 
-    public Cycling(int length, DateOnly date, double speed): base(length, date)
+    public Cycling(int length, DateOnly date, TimeOnly time, double speed): base(length, date, time)
     {
         _speed = speed;
     }

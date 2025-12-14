@@ -2,11 +2,13 @@ abstract class Activity
 {
     private int _length;
     private DateOnly _date;
+    private TimeOnly _time;
 
-    public Activity(int length, DateOnly date)
+    public Activity(int length, DateOnly date, TimeOnly time)
     {
         _length = length;
         _date = date;
+        _time = time;
     }
 
     public int GetLength()
@@ -17,6 +19,11 @@ abstract class Activity
     public DateOnly GetDate()
     {
         return _date;
+    }
+
+    public TimeOnly GetTime()
+    {
+        return _time;
     }
 
     public abstract double CalculateDistance();
@@ -33,7 +40,7 @@ abstract class Activity
         string dateText = GetDate().ToString("dd MMM yyyy");
         string classType = GetType().Name;
 
-        return $"{dateText} {classType} ({GetLength()} min): " +
+        return $"{dateText} at {GetTime()} {classType} ({GetLength()} min): " +
             $"Distance {CalculateDistance():0.0} km, " +
             $"Speed {CalculateSpeed():0.0} kph, " +
             $"Pace {CalculatePace():0.0} min per km.";

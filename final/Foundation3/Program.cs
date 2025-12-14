@@ -19,7 +19,8 @@ class Program
     new DateOnly(2025,12,20),
     new TimeOnly(12,0),
     address1,
-    "Mark Zucherberg",
+    new TimeOnly(11,00),
+    "Mark Zuckerberg",
     20);
 
     Reception reception = new Reception(
@@ -28,6 +29,7 @@ class Program
     new DateOnly(2025,12,30),
     new TimeOnly(10,0),
     address3,
+    new TimeOnly(9,0),
     "ceremony.reception@premier.com");
 
     Outdoor outdoor = new Outdoor(
@@ -36,6 +38,7 @@ class Program
     new DateOnly(2025,12,28),
     new TimeOnly(16,0),
     address2,
+    new TimeOnly(15,30),
     "Rain expected");
 
     Console.WriteLine("\n==========================================================================");
