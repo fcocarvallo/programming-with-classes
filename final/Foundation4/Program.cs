@@ -24,7 +24,7 @@ class Program
         foreach(Activity activity in myActivities)
         {
             Console.WriteLine("------------------------------------------------------------------------------------------------");
-            Console.WriteLine("                                           ACTIVITY");
+            Console.WriteLine($"                                           {activity.GetType().Name} ");
             Console.WriteLine("------------------------------------------------------------------------------------------------");
             Console.WriteLine(activity.DisplaySummary());
         }
