@@ -6,6 +6,7 @@ public class Video
     public string _title;
     public string _author;
     public int _length;
+    public int _views;
 
     public List<Comment> _myComments = new List<Comment>();
 
@@ -22,7 +23,7 @@ public class Video
     public void SongInfo()
     {   
         Console.WriteLine("-------------------------------------------------------------------------------------------------------");
-        Console.WriteLine($" Title: {_title}\n Artist: {_author}\n Duration: {_length} seconds");
+        Console.WriteLine($" Title: {_title}\n Artist: {_author}\n Duration: {_length} seconds\n Views: {_views.ToString("N0")}");
         Console.WriteLine("-------------------------------------------------------------------------------------------------------");
     }
 

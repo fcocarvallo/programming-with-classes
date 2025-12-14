@@ -13,6 +13,7 @@ class Program
         billieJean._title = "Billy jean";
         billieJean._author = "Michael Jackson";
         billieJean._length = 294;
+        billieJean._views = 4958774;
             //Comment #1
             Comment billie1 = new Comment();
             billie1._person = "Nick Anderson";
@@ -38,6 +39,7 @@ class Program
         welcomeToJungle._title = "Welcome to the Jungle";
         welcomeToJungle._author = "Guns N' Roses";
         welcomeToJungle._length = 274;
+        welcomeToJungle._views = 3434837;
             //Comment #1
             Comment welcome1 = new Comment();
             welcome1._person = "Luke Christensen";
@@ -62,6 +64,7 @@ class Program
         backInBlack._title = "Back in black";
         backInBlack._author = "AC/DC";
         backInBlack._length = 255;
+        backInBlack._views = 2938475;
                         //Comment #1
             Comment back1 = new Comment();
             back1._person = "Scott Erickson";
